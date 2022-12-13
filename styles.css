@@ -1,6 +1,11 @@
 /* Main website structure */
+
+*{
+    font-family: Karla, sans-serif;
+}
+
 body {
-    background-color: #399994;
+    background-image: url("/Users/gemmabaldock/Downloads/HTML/static/images/AboveCloud.png");
     color: black;
     font-family: 'Karla';
     height: 100%;
@@ -63,7 +68,7 @@ nav>img {
 }
 
 #logo {
-    width: 150px;
+    width: 200px;
     display: inline-block;
 }
 
@@ -94,7 +99,6 @@ div#LogoImage
 {
     position: absolute;
     left: 25px;
-    top:-35px;
 }
 
 /* View balance page */
@@ -295,4 +299,189 @@ div#LogoImage
     border: solid black 2px;
     display: inline-block;
     margin-right: 20px;
+}
+
+
+/* Homepage */
+
+
+#HomepageLogo
+{
+    display: grid;
+width:50%;
+height: 30%;
+margin: auto;
+}
+
+
+.box{
+
+  text-align: center;
+  cursor: pointer;
+display: flex;
+justify-content: center;
+align-content: flex-end;
+margin-top: 20rem;
+flex-direction: row;}
+
+#box-1
+{display:inline-block; 
+    padding:1em 3em;
+margin: 0 1em 1em 0;
+border: 0.5em solid(255, 255, 255, 1);
+border-radius: 2em;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Karla', sans-serif;
+font-weight: 600;
+font-size: 1.3em;
+color: rgb(0, 0, 0);
+text-shadow: 0 0.05em 0.05em rgb(0,0,0,0.35);
+text-align: center;
+transition: all 0.2s;
+}
+
+#box-1:hover{
+    background-color: white;
+    border-color: #ffffff;
+}
+
+@media  all and (max-width: 30em)
+    {
+        #box-1{
+            display:block;
+            margin:0.2em auto;
+        }
+    
+    
+}
+
+#Slogan
+{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
+}
+
+#box-2
+{display:inline-block; 
+padding:1em 3em;
+margin: 0 1em 1em 0;
+border: 0.5em solid(255, 255, 255, 1);
+border-radius: 2em;
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Karla', sans-serif;
+font-weight: 600;
+font-size: 1.3em;
+color: rgb(0, 0, 0);
+text-shadow: 0 0.05em 0.05em rgb(0,0,0,0.35);
+text-align: center;
+transition: all 0.2s;
+}
+
+#box-2:hover{
+    border-color: #47bf53;
+}
+
+@media  all and (max-width: 30em)
+    {
+        #box-2{
+            display:block;
+            margin:0.2em auto;
+        }
+    
+    
+}
+
+.footer{
+margin: auto;
+padding: auto;
+}
+
+
+
+/* Login/registeration page */
+
+
+.form-box{
+
+    width: 320px;
+    height: 500px;
+    position: relative;
+    margin: 10% auto;
+background: white;
+padding: 10px;
+border-radius: 3px;
+overflow: hidden;}
+
+.button-box
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 5px 5px #d6d8d8;
+    border-radius: 20px;}
+
+.toggle-btn{
+padding: 10px 30px;
+cursor: pointer;
+background: transparent;
+border: 0;
+outline: none;
+position: relative;
+    }
+
+    #btn
+    {
+        top:0;
+        left:0;
+        position: absolute;
+        width: 120px;
+        height:100%;
+        background: #399992;
+        border-radius: 30px;
+        transform: 0.5s;
+    
+    }
+
+.input-group{
+    top:150px;
+    position: absolute;
+    width: 300px;
+    transition: .5s;}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    margin-left: 10px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+
+
+}
+
+.submit-btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px;
+    background: #399992;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+
+#register
+{left: 600px;
 }
