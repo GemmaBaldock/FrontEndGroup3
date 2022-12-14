@@ -14,29 +14,35 @@
         <nav div id="navbar">
             <div id="LogoImage"><img src="static/images/Logo.png" id="logo"> </img></div>
             <div id="MenuOptions"><ul id="NavBar">
-                <li> <a href="homepage.html">Home</a></li>
+                <li> <a href="viewBalance.html">Home</a></li>
                 <li> <a href="addBalance.html"> Add Balance </a></li>
-                <li><a href="viewBalance.html"> View Balance </a></li>
                 <li> <a href="logout.html">Log Out</a></li>
+            
             </ul></div></nav>
-s
+
     </header>
 
     <article id="mainContainer2">
 
-        <h1> Current balance </h1>
+        <div class="TopUpForm">
+        <h1 class="currentBalanceAmount"> Current balance: £45.21 </h1>
         <form>
-            <h1> Enter top-up Amount</h1>
-            <input type="number" id="topUpAmount" name="topUpAmount" min="5" max="100" step=".01">
+            <h1 class="topUpAmountBalance"> Enter top-up Amount (£):
+            </h1>
+            <input type="number" id="topUpAmount" name="topUpAmount" min="5" max="100" step=".01" placeholder="5.00">
         </form>
         </form>
 
-        <p id="balanceButtons">
-            <button id="addBalanceButtons"> Submit </button>
+        <div id="balanceButtons">
+            <button type="submit" id="addBalanceButtons">Submit</button>
             <button id="addBalanceButtons"> Cancel</button>
-        </p>
+        </div>
+    </div>
     </article>
 
+    <script>
+        document.querySelector('.addBalanceButtons').value = '5.00';
+    </script>
 
     <footer>
         © Metro Marvel 2022

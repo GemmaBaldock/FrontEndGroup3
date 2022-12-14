@@ -20,7 +20,6 @@
             <div id="LogoImage"><img src="static/images/Logo.png" id="logo"> </img></div>
             <div id="MenuOptions"><ul id="NavBar">
                 <li> <a href="homepage.html">Home</a></li>
-                <li> <a href="addBalance.html">Balance </a></li>
                 <li> <a href="logout.html">Log Out</a></li>
             </ul></div></nav>
 
@@ -32,22 +31,24 @@
             </div>
 
         <form id="login" class="input-group">
-            <input type="text" class="input-field" placeholder="Username" required>
-            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="text" class="input-field" placeholder="Customer ID" required>
             <button type="submit" class="submit-btn">Log in</button>
 
         </form>
 
-        <form id="register" class="input-group">
+        <div><form id="register" class="input-group">
+
             <input type="text" class="input-field" placeholder="First Name(s)" required>
             <input type="text" class="input-field" placeholder="Surname" required>
             <input type="text" class="input-field" placeholder="Email Address" required>
-            <input type="date" class="input-field" required>
-
+            <input type="date" class="input-field" name='name' required>
+        
+        
 
             <button type="submit" class="submit-btn">Register</button>
 
         </form>
+    </div>
             </div>
 
             <script>
