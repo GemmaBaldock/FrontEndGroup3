@@ -485,6 +485,16 @@ padding: auto;
 /* Login/registeration page */
 
 
+.form-box-login{
+
+    width: 320px;
+    height: 330px;
+    position: relative;
+    margin: 10% auto;
+background: white;
+padding: 10px;
+border-radius: 3px;}
+
 .form-box{
 
     width: 320px;
@@ -510,21 +520,9 @@ cursor: pointer;
 background: transparent;
 border: 0;
 outline: none;
-position: relative;
+text-align: center;
     }
 
-    #btn
-    {
-        top:0;
-        left:0;
-        position: absolute;
-        width: 120px;
-        height:100%;
-        background: #399992;
-        border-radius: 30px;
-        transform: 0.5s;
-    
-    }
 
 .input-group{
     top:150px;
@@ -565,3 +563,30 @@ position: relative;
 {left: 600px;
 }
 
+.loginTopText
+{
+    text-align: center;
+    padding: 10px;
+}
+
+.alreadyHaveAccount
+{
+    text-align: center;
+    position: relative;
+    translate: +6px;
+    color: grey;
+
+}
+
+.signupInstead
+{
+position: relative;
+color: white;
+}
+
+.signupInstead
+{
+    translate: +71px -40px;
+    text-size-adjust: 0.6rem;
+    font-size: 14px;
+}
